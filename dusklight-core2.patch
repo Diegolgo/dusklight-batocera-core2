@@ -1,0 +1,19 @@
+diff --git a/mods/randomizer b/mods/randomizer
+--- a/mods/randomizer
++++ b/mods/randomizer
+@@ -1 +1 @@
+-Subproject commit 1f24e81303536db4b77f49d057a8ec1f11162000
++Subproject commit 1f24e81303536db4b77f49d057a8ec1f11162000-dirty
+diff --git a/src/dusk/mods/svc/texture.cpp b/src/dusk/mods/svc/texture.cpp
+index ac3b2e1664..af0969ea06 100644
+--- a/src/dusk/mods/svc/texture.cpp
++++ b/src/dusk/mods/svc/texture.cpp
+@@ -232,7 +232,7 @@ void textures_sync_replacements() {
+         if (item.first->active) {
+             return false;
+         }
+-        unregister_record(item.second);
++        unregister_record(const_cast<ModTextureRecord&>(item.second));
+         return true;
+     });
+ 
