@@ -20,3 +20,6 @@ cmake --preset linux-clang-relwithdebinfo \
 ## Uso en Batocera
 Copiar la carpeta "install" a /userdata/roms/ports/ y lanzar:
 ./dusklight --dvd /ruta/a/TwilightPrincess.rvz
+
+## Descarga
+El build ya compilado está en la sección Releases de este repositorio (dusklight-batocera-core2.tar.gz).
